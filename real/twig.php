@@ -17,7 +17,7 @@ $vars = array(
 $startTime = microtime(true);
 $startMemory = memory_get_usage();
 
-echo $twig->render('twig.tpl', $vars);
+echo $twig->render('twig_content.tpl', $vars);
 
 echo "Twig: ", microtime(true)-$startTime," s";
 echo "<br />start: ",number_format($startMemory,0,"."," ")," b";

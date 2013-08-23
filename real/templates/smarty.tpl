@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<title>{$title}</title>
+	<title>{block title}{$title}{/block}</title>
 	<meta name="keywords" content="keywords" />
 	<meta name="description" content="description" />
 	<link rel="stylesheet" href="templates/style.css" type="text/css" media="screen, projection" />
@@ -20,7 +20,7 @@
 
 		<div id="container">
 			<div id="content">
-				{include file="smarty_content.tpl"}		
+				{block content}{/block}
 			</div><!-- #content-->
 		</div><!-- #container-->
 

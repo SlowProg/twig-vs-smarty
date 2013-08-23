@@ -17,7 +17,7 @@ $startTime = microtime(true);
 $startMemory = memory_get_usage();
 
 $smarty->assign($vars);
-$smarty->display('smarty.tpl');
+$smarty->display('smarty_content.tpl');
 
 echo "Smarty: ", microtime(true)-$startTime," s";
 echo "<br />start: ",number_format($startMemory,0,"."," ")," b";
